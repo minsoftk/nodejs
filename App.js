@@ -6,7 +6,7 @@ app.set('view engnine', 'ejs');
 
 let db;
 MongoClient.connect(
-	'mongodb+srv://minsoftk:qwer1234@cluster0.cfdkr.mongodb.net/todoapp?retryWrites=true&w=majority',
+	'mongodb+srv://userid:password@cluster0.cfdkr.mongodb.net/todoapp?retryWrites=true&w=majority',
 	function (err, client) {
 		if (err) console.log(err);
 		db = client.db('todoapp'); // todoapp db에 연결 요청
